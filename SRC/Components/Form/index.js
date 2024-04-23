@@ -1,6 +1,7 @@
 import React from "react";
-import { View, Text  } from "react-native";
-import { TextInput } from "react-native-web";
+import { View, Text, TextInput, Button  } from "react-native";
+import Title from "../Title";
+
 
 export default function Form(){
     return(
@@ -18,6 +19,11 @@ export default function Form(){
            keyboardType="numeric"
            />
 
+            <Button
+             onPress={validation()}
+             title="Calcular IMC"
+             color="#61dafb"
+            />
         </View>
         </View>
     );
